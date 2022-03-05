@@ -8,6 +8,12 @@ for row in csv_f:
   # unpack the row if needed
  
 ''' write data to csv file writer class '''
+data = [[x,x],[x,x]]
+ with open("file_name", 'w' ) as file:
+    writer = csv.writer(file)
+    writer.writerows(data) # writerows method to write multiple rows, writerow help to write single row at a time
+    
+    
 
 
 
