@@ -27,7 +27,7 @@ os.listdir("dir")
 
 dir = 'dir'
 def list_dir_file:
-  for name in os.listdir(dir:
+  for name in os.listdir(dir):
     fullname = os.path.join(dir, name)
     if os.path.isdir(fullname):
        print("{} is a dir".format(fullname))
