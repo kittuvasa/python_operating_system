@@ -13,5 +13,12 @@ print(re.search(r"[!@a-zA-Z0-9]", "anystring"))
 ''' [] chracter class'''
 print(re.search(r"[^a-zA-z]", "This is a complete sentence")) #returns first ' ' circumflex inside[] provides a way to find that aren't match with specifie
 print(re.search(r"cats|dogs", "i like cats and dogs")) # | pipe allow to either or search 
+print(re.search(r"py.*n", "python programming")) # repeatation qualifier * includes any number of character including 0 in it. output "python programmin"
+print(re.search(r"py[a-z]*n", "python programming"))
+print(re.search(r"o+l+", "goldfish")) # repeatation qualifier + includes the one or more occurence of character mentioned before
+print(re.search(r"p?each", "i like each of you")) # repeatation qualifer ? includes the one or 0 occurence of character mention before
+print(re.search(r"\.com", "github.com")) # \ backslash espace character to string utilise the special character .*+?^$[]
+print(re.search(r"\w*", "thi3_ jkll")) # output thi3 \w matches the sequence of alphanumeric character including _
+
 
 
