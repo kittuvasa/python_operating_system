@@ -7,7 +7,7 @@ The circumflex [^] and the dollar sign [$] are anchor characters.
 '''
 print(re.search(r"i.g", "bringing"))
 print(re.search(r"^br", "bringing"))
-print(re.search(r"$ing", "bringing"))
+print(re.search(r"ing$", "bringing"))
 print(re.search(r"^br", "Bringing", re.IGNORECASE))
 print(re.search(r"[!@a-zA-Z0-9]", "anystring"))
 ''' [] chracter class'''
