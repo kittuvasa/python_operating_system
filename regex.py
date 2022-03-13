@@ -21,7 +21,14 @@ print(re.search(r"\.com", "github.com")) # \ backslash espace character to strin
 print(re.search(r"\w*", "thi3_ jkll")) # output thi3 \w matches the sequence of alphanumeric character including _
 
 ###############capturing groups - the portion of pattern inside parentheses
-re.search(r"^(\w*), (\w*)","alexis adamas")
+x  = re.search(r"^(\w*), (\w*)","alexis adamas")
+x.groups() # return tuple of matched values ('alexis', 'adamns')
+x[0] # return the whole matched value 'alexis adams'
+x[1] # return the alexis
+x[2] # return the adams
+
+######### numerical repeatation qualifiers
+re.search(r"[a-zA-Z]{5}", " a ghost")
 
 
 
