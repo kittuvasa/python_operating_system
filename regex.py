@@ -20,5 +20,10 @@ print(re.search(r"p?each", "i like each of you")) # repeatation qualifer ? inclu
 print(re.search(r"\.com", "github.com")) # \ backslash espace character to string utilise the special character .*+?^$[]
 print(re.search(r"\w*", "thi3_ jkll")) # output thi3 \w matches the sequence of alphanumeric character including _
 
+###############capturing groups - the portion of pattern inside parentheses
+re.search(r"^(\w*), (\w*)","alexis adamas")
+
+
+
 
 
