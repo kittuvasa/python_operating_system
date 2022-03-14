@@ -29,6 +29,8 @@ x[2] # return the adams
 
 ######### numerical repeatation qualifiers
 re.search(r"[a-zA-Z]{5}", " a ghost")
+re.findall(r"[a-zA-z]{5}", "a ghost are really funny") # return ["ghost", reall, funny]
+
 
 
 
