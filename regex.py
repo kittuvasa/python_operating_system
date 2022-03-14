@@ -10,7 +10,7 @@ print(re.search(r"^br", "bringing"))
 print(re.search(r"ing$", "bringing"))
 print(re.search(r"^br", "Bringing", re.IGNORECASE))
 print(re.search(r"[!@a-zA-Z0-9]", "anystring"))
-''' [] chracter class'''
+''' [] character class'''
 print(re.search(r"[^a-zA-z]", "This is a complete sentence")) #returns first ' ' circumflex inside[] provides a way to find that aren't match with specifie
 print(re.search(r"cats|dogs", "i like cats and dogs")) # | pipe allow to either or search 
 print(re.search(r"py.*n", "python programming")) # repeatation qualifier * includes any number of character including 0 in it. output "python programmin"
@@ -30,6 +30,37 @@ x[2] # return the adams
 ######### numerical repeatation qualifiers
 re.search(r"[a-zA-Z]{5}", " a ghost")
 re.findall(r"[a-zA-z]{5}", "a ghost are really funny") # return ["ghost", reall, funny]
+re.findall(r"\b[a-zA-z]{5}\b", "a ghost are really funny") # return ["ghost",  funny]
+
+re.findall(r"\w{3,5}", "one twoo three")
+['one', 'twoo', 'three']
+
+ re.findall(r"\w{3,4}", "one twoo three")
+['one', 'twoo', 'thre']
+
+re.findall(r"\b\w{3,4}\b", "one twoo three")
+['one', 'twoo']
+
+ re.findall(r"\w{,4}", "one twoo three")
+['one', '', 'twoo', '', 'thre', 'e', '']
+
+re.split(r"[.?!]","one.two?three!")
+[one, two, three, ""]
+
+re.split(r"([.?!])","one.two?three!")
+[one, .,two, ?, three, !, ""]
+
+re.sub(r"[\w.+%]+@[\w.-]+", "[xxx]", "email go_google4543.com")
+'email [xxx]'# return the matched string replaced with the mention string
+
+re.sub(r"([\w\.-]*), ([\w\.-]*)",r"\2 \1", "adams, ava") # return a new string wrt to second raw  string
+
+
+
+
+
+
+
 
 
 
