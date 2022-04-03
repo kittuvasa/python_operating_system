@@ -5,7 +5,7 @@ import os
 # we can get content of environment variables using environ dict present in os module
 print("PATH:", os.environ.get("PATH","")) # windows cmd echo %variable_name%
 
-# LINUX command to set env - export FRUIT=PINEAPPLE
+# LINUX command to create env - export FRUIT=PINEAPPLE
 
 #######################
 # command line arg, parameters taht are passes to a program when it's started
