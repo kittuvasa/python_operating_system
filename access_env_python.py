@@ -1,5 +1,5 @@
 # environment variables relate to os. hence we use os module
-# source of input of our program can be user input, env and command line arguments.
+# source of input of our program can be user input, env and command line arguments even exit status.
 import os
 
 # we can get content of environment variables using environ dict present in os module
