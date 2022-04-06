@@ -11,7 +11,7 @@ print(re.search(r"ing$", "bringing"))
 print(re.search(r"^br", "Bringing", re.IGNORECASE))
 print(re.search(r"[!@a-zA-Z0-9]", "anystring"))
 ''' [] character class'''
-print(re.search(r"[^a-zA-z]", "This is a complete sentence")) #returns first ' ' circumflex inside[] provides a way to find that aren't match with specifie
+print(re.search(r"[^a-zA-z]", "This is a complete sentence")) #returns first ' ' circumflex inside[] provides a way to find that aren't match with specified
 print(re.search(r"cats|dogs", "i like cats and dogs")) # | pipe allow to either or search 
 print(re.search(r"py.*n", "python programming")) # repeatation qualifier * includes any number of character including 0 in it. output "python programmin"
 print(re.search(r"py[a-z]*n", "python programming"))
