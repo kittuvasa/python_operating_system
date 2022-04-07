@@ -1,4 +1,5 @@
-''' regular expressions are powerful and flexible feature to extract the desired string pattern or format from a string and much more'''
+''' Regular Expression (RegEx) is a sequence of characters that defines a search pattern. We can use regular expressions using re module.
+regular expressions are powerful and flexible feature to extract the desired string pattern or format from a string and much more'''
 import re # re - regular expression
 
 '''grep is the linux command line tool help to implement regex, grep l.st file_loc (. is the wildcard) [re.findall(l.st, text)]
