@@ -19,6 +19,21 @@ print(sys.argv)
 # run file.py one two three
 # output- ["one", "two", "three"]
 
+'''
+import re
+import sys
+print("started")
+
+def rearrange_func(name):
+ raw = "([\w .]*), ([\w .]*)"
+ result = re.search(raw, name)
+ print(f"{result[2]} {result[1]}")
+
+rearrange_func(sys.argv[1])
+print("ended") '''
+
+
+
 #########subprocess
 import subprocess
 print(subprocess.run(["date"]))
