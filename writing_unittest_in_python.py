@@ -25,3 +25,6 @@ class TestRearrange(unittest.TestCase):
 unittest.main()
 #########################
 
+# when dealing with edge cases, sometimes it pays tp be pessimist - a person who tends to see the worst aspect of things or believe that the worst will happen.
+
+
