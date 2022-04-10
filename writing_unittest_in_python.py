@@ -15,6 +15,8 @@ def rearrange_func(name):
 #################
 from rearrange import rearrange_func
 import unittest
+'''The package unittest supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections,
+and independence of the tests from the reporting framework. This module also provides classes that make it simple to support these qualities for a set of tests. '''
 
 class TestRearrange(unittest.TestCase):
  def test_basic(self):
