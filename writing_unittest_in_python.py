@@ -35,6 +35,14 @@ unittest.main()
 '''the unit test code for a program is developed alogon side or after the actual code is developed the test cases are made with the knowledge of how software works'''
 
 # Error and Exceptions
+'''Let's dive into how try/except blocks work:
+
+First, we execute the try clause.
+If no exception occurs, the except clause is ignored.
+If an exception occurs during the execution of the try clause, the rest of the try clause is then skipped.
+It then attempts to match the type with the exception named after the except keyword. If this matches, the except clause is executed. If it doesn't, the control
+is passed on to outer try statements. If no handler is found, it's an unhandled exception and the execution stops with an error message.
+A try statement may have more than one except clause to specify handlers for different exceptions. In our case, the exception error we need to handle is IndexError. '''
 # RAISE ERROR
 
 def validate_username(name, minlen):
