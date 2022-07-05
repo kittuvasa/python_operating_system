@@ -19,7 +19,7 @@ print(re.search(r"py[a-z]*n", "python programming"))
 print(re.search(r"o+l+", "goldfish")) # repeatation qualifier + includes the one or more occurence of character mentioned before
 print(re.search(r"p?each", "i like each of you")) # repeatation qualifer ? includes the one or 0 occurence of character mention before
 print(re.search(r"\.com", "github.com")) # \ backslash espace character to string utilise the special character .*+?^$[]
-print(re.search(r"\w*", "thi3_ jkll")) # output thi3 \w matches the sequence of alphanumeric character including _
+print(re.search(r"\w+", "thi3_ jkll")) # output thi3 \w matches the sequence of alphanumeric character including _
 
 ###############capturing groups - the portion of pattern inside parentheses
 x  = re.search(r"^(\w*), (\w*)","alexis adamas")
